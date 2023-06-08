@@ -35,23 +35,23 @@ Notes:
 Operators are Kubernetes services that can dynamically allocate & manage resources used by other Pods / Deployments / Services / etc.
 These must necessarily be setup first because all other software will depend on them.
 
-- Configuration Storage: Controls Kubernetes resources access to Config / ConfigMap manifests for configuring services running in Kubernetes. **Essential**
-  1. `etcd`
+- **Configuration Storage**: Controls Kubernetes resources access to Config / ConfigMap manifests for configuring services running in Kubernetes. **Essential**
+  - [ ] `etcd`
 
-- Storage Provisioning: Controls allocating storage for Kubernetes Pods / Deployments / DaemonSets / ReplicaSets. **Essential**
-  1. Operator: Rook-Ceph (for provisioning block storage)
-  2. Operator: Minio     (for provisioning S3 Object Storage buckets that many services use)
+- **Storage Provisioning**: Controls allocating storage for Kubernetes Pods / Deployments / DaemonSets / ReplicaSets. **Essential**
+  - [ ] Operator: Rook-Ceph (for provisioning block storage)
+  - [ ] Operator: Minio     (for provisioning S3 Object Storage buckets that many services use)
 
-- SSL/TLS Certificate Provisioning: Controls generation, allocation, renewal of SSL/TLS certificates for Kubernetes Services / Ingress Resources. (this is what browsers use to encrypt traffic to/from servers). Also used to generate SSL/TLS certificates for new subdomains (e.g. `passwords.piwine.com`). **Essential**
-  3. ClusterIssuer: `cert-manager`
+- **SSL/TLS Certificate Provisioning**: Controls generation, allocation, renewal of SSL/TLS certificates for Kubernetes Services / Ingress Resources. (this is what browsers use to encrypt traffic to/from servers). Also used to generate SSL/TLS certificates for new subdomains (e.g. `passwords.piwine.com`). **Essential**
+  - [ ] ClusterIssuer: `cert-manager`
 
-- Secret Provisioning: Controls allocating, generating, encrypting, decrypting of sensitive keys that must be kept private to ensure security of all infrastructure. This will be necessary to provide secret information like administrator credentials & encryption keys to software running inside Kubernetes clusters. **Essential**
-  4. Operator: Hashicorp Vault
+- **Secret Provisioning**: Controls allocating, generating, encrypting, decrypting of sensitive keys that must be kept private to ensure security of all infrastructure. This will be necessary to provide secret information like administrator credentials & encryption keys to software running inside Kubernetes clusters. **Essential**
+  - [ ] Operator: Hashicorp Vault
 
-- Access Control Management: Controls what users have what permissions within Kubernetes. Can be unified with other authentication services. ServiceAccount objects will need to use this mechanism. **Essential**
-  5. Operator:
+- **Access Control Management**: Controls what users have what permissions within Kubernetes. Can be unified with other authentication services. ServiceAccount objects will need to use this mechanism. **Essential**
+  - [ ] Operator:
 
-- Ingress Controller: Controls what services can be accessed by the outside world. Necessary to allow some services to be externally accessible (few), some services to be accessible only to PIWC (some), & some services to only be accessible to other Kubernetes services (most). **Essential**
+- **Ingress Controller**: Controls what services can be accessed by the outside world. Necessary to allow some services to be externally accessible (few), some services to be accessible only to PIWC (some), & some services to only be accessible to other Kubernetes services (most). **Essential**
   6. Operator: (one or more of below)
     - [`ingress-nginx`]()
     - [`traefik`]()
@@ -60,8 +60,8 @@ These must necessarily be setup first because all other software will depend on 
     - [`ngrok`](https://ngrok.com/docs/using-ngrok-with/k8s)
     - [`envoy-proxy`](https://www.envoyproxy.io)
 
-- Load Balancer: Controls how Kubernetes Pods are created/destroyed across nodes in response to resource usage, scarcity, & failing replicas. **Essential**
-  7. Operator: `metallb`
+- **Load Balancer**: Controls how Kubernetes Pods are created/destroyed across nodes in response to resource usage, scarcity, & failing replicas. **Essential**
+  - [ ] Operator: `metallb`
 
 - Internal Cluster DNS: Controls how services running inside Kubernetes access both the internal & external network. Needed for services to be able to discover one another. **Essential**
-  8. Operator: `coredns`
+  - [ ] Operator: `coredns`
