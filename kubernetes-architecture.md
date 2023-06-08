@@ -63,5 +63,5 @@ These must necessarily be setup first because all other software will depend on 
 - **Load Balancer**: Controls how Kubernetes Pods are created/destroyed across nodes in response to resource usage, scarcity, & failing replicas. **Essential**
   - [ ] Operator: `metallb`
 
-- Internal Cluster DNS: Controls how services running inside Kubernetes access both the internal & external network. Needed for services to be able to discover one another. **Essential**
+- **Internal Cluster DNS**: Controls how services running inside Kubernetes access both the internal & external network. Needed for services to be able to discover one another. **Essential**
   - [ ] Operator: `coredns`
