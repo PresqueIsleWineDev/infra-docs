@@ -19,8 +19,8 @@ Notes:
 
 ## Prerequisites
 
-1. Prepare hardware for Kubernetes nodes. See: [Kubernetes: Hardware Setup](./kubernetes-hardware-setup.md)
-2. Configure & install operating system to run on hardware for Kubernetes nodes. See: [Kubernetes - Operating System Setup](./kubernetes-operating-system-setup.md)
+1. Prepare hardware for Kubernetes nodes. See: [Kubernetes - Node Hardware Setup](./kubernetes-hardware-setup.md)
+2. Configure & install operating system to run on hardware for Kubernetes nodes. See: [Kubernetes - Node Operating System Setup](./kubernetes-operating-system-setup.md)
 
 ## Process
 
