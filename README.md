@@ -3,7 +3,7 @@
 ## References
 
 - [Term Glossary](./glossary.md)
-- [LEFCON Monthly Invoice](./invoice-lefcon-monthly-feb23.pdf)
+- [LEFCON Invoice](./invoice-lefcon-monthly-feb23.pdf)
 
 ## About
 
@@ -65,14 +65,17 @@ Missing Details:
 
 For a list of services I will need to configure and deploy, see [Services: List](./services-list.md)
 
-## To-Dos
+## To-Do
 
 *only apply to this document, not our systems*
 
-- [ ] Fix broken links to other pages.
+- [X] Fix broken links to other pages.
 - [ ] Reference items from the included LEFCON invoice.
 - [ ] Add expected costs for any 3rd-party services.
-- [ ] Turn the documents in this folder into actual documentation.
-- [ ] Host this documentation somewhere accessible to PIWC employees.
-- [ ] Create administrator usage documentation after rolling out a given piece of software to testing.
-- [ ] Create end-user usage documentation after rolling out a given piece of software to production.
+- [X] Turn the documents in this folder into actual documentation.
+  - [X] Host this documentation somewhere accessible to PIWC employees. [PresqueIsleWineDev/infra-docs](https://github.com/PresqueIsleWineDev/infra-docs)
+  - [ ] Create administrator usage documentation after rolling out a given piece of software to testing.
+  - [ ] Create end-user usage documentation after rolling out a given piece of software to production.
+  - [ ] Merge this repo with actual infrastructure configuration repo (place in `docs` directory)
+  - [ ] Convert general process to-dos into GitHub project board
+  - [ ] Convert specific process to-dos into GitHub issues
