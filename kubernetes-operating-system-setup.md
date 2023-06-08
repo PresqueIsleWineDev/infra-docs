@@ -17,12 +17,12 @@ Notes:
 
 ## Process
 
-1. [ ] Create Kubernetes    generic node base NixOS config. (*Never instantiated, only inherited from*) **Work already in-progress**
-2. [ ] Create Kubernetes     worker node base NixOS config. Inherit from generic config. For instantiating     worker nodes.
+1. [ ] Create Kubernetes generic node base NixOS config. (*Never instantiated, only inherited from*) **Work already in-progress**
+2. [ ] Create Kubernetes worker node base NixOS config. Inherit from generic config. For instantiating worker nodes.
 3. [ ] Create Kubernetes controller node base NixOS config. Inherit from generic config. For instantiating controller nodes.
 4. [ ] Configure each node:
-  - [ ] Create Disko Nix config to provision, partition, format hard drives according to the type, speed, & size of the node's hard drive(s)
-  - [ ] Create NixOS host configs based off the base configs created above, importing:
+  - [ ] Create [disko](https://github.com/nix-community/disko) Nix config to provision, partition, format hard drives according to the type, speed, & size of the node's hard drive(s)
+  - [ ] Create [NixOS](https://nixos.org) host configs based off the base configs created above, importing:
     - Disko config matching the PC's hard disks.
     - Base NixOS config (if worker node, worker base, else controller base)
     - Host specific overrides (*only necessary attributes* like `networking.hostName`, `networking.connections.ipv4.address`, `swap.swapDevices` etc.)
