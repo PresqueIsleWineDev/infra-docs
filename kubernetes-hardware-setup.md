@@ -1,5 +1,5 @@
 
-# Kubernetes: Server Hardware Setup
+# Kubernetes: Node Hardware Setup
 
 ## About
 
@@ -38,23 +38,22 @@ Notes:
 - [ ] Provision (*low resource*) Kubernetes node in Microsoft Azure
 
 1. [ ] Backup data on old machines (*Repeat for each machine*)
-
-  a. [ ] Backup all existing data, Windows 7 license keys, account credentials, etc. from all PC hard drives
-  b. [ ] Wipe all backed-up PC hard drives.
+  - [ ] Backup all existing data, Windows 7 license keys, account credentials, etc. from all PC hard drives
+  - [ ] Wipe all backed-up PC hard drives.
 
 2. [ ] Catalog all hardware
 
-    a. [ ] Determine number of starting nodes: [1, ~12]    (*we'll refer to this as `N` later*)
-    b. [ ] Select the fastest `N` CPUs        available from all old PCs.
-    c. [ ] Select the fastest `N` RAM sticks  available from all old PCs.
-    d. [ ] Select the fastest `N` hard drives available from all old PCs.
-    e. [ ] Select the largest `N` hard drives available from all old PCs.
-    f. [ ] Select the largest `N` RAM sticks  available from all old PCs.
+    - [ ] Determine number of starting nodes: [1, ~12]    (*we'll refer to this as `N` later*)
+    - [ ] Select the fastest `N` CPUs        available from all old PCs.
+    - [ ] Select the fastest `N` RAM sticks  available from all old PCs.
+    - [ ] Select the fastest `N` hard drives available from all old PCs.
+    - [ ] Select the largest `N` hard drives available from all old PCs.
+    - [ ] Select the largest `N` RAM sticks  available from all old PCs.
 
 
 3. [ ] Re-organize hardware configuration of old Windows PCs to create a few machines with optimal performance given all old hardware parts.
 
-  a. [ ] Build primary controller node from the fastest hardware.
+  - [ ] Build primary controller node from the fastest hardware.
     - Use **fastest** CPU.
     - Use **fastest** hard drive in   **primary** slot.
     - Use **largest** hard drive in **secondary** slot.
@@ -63,6 +62,6 @@ Notes:
       - if **two** sticks fastest, use        **both sticks**,
       - else,                      use **two largest sticks** from those tied for fastest.
 
-  b. [ ] Repeat step `a` with remaining hardware until you have `N` machines.
+  - [ ] Repeat step `a` with remaining hardware until you have `N` machines.
     - *consider pairing slowest cluster node CPU with largest hard drives remaining to use as storage/backup node*
 
