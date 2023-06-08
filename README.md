@@ -79,3 +79,5 @@ For a list of services I will need to configure and deploy, see [Services: List]
   - [ ] Merge this repo with actual infrastructure configuration repo (place in `docs` directory)
   - [ ] Convert general process to-dos into GitHub project board
   - [ ] Convert specific process to-dos into GitHub issues
+  - [ ] Convert documentation into GitHub wiki
+  - [ ] Render documentation/wiki as webpage
