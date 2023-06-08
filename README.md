@@ -1,15 +1,15 @@
 # Infrastructure Documentation
 
-![PIWC Logo](./piwine-logo.png?raw=true)
+![PIWC Logo](./assets/piwine-logo.png?raw=true)
 
 Documentation for our digital infrastructure.
 
-Currently only contains the plan for transitioning from LEFCON to internal administration and management.
+Currently only contains the plan for transitioning from external IT to internal administration and management.
 
 ## References
 
-- [Term Glossary](./glossary.md)
-- [IT Invoice](./invoice-lefcon-monthly-feb23.pdf)
+- [Term Glossary](./docs/glossary.md)
+- [IT Invoice](./assets/invoice-it-services-feb23.pdf)
 
 ## About
 
@@ -77,31 +77,32 @@ Missing Details:
 
 ### Setup Overview
 
-1. Configure hardware of machines to use as servers.   [Servers: Setup Hardware](./kubernetes-hardware-setup.md)
-2. Create configurations for server operating systems. [Servers: Setup OS](./kubernetes-operating-system-setup.md)
-3. Configure Kubernetes base architecture.             [Servers: Setup Kubernetes](./kubernetes-architecture.md)
-4. Configure services.                                 [Services: Setup](./services-setup.md)
-5. Deploy services to Kubernetes cluster.              [Services: Deploy](./services-deploy.md)
-6. Configure test workstation.                         [Test PC: Setup](./workstation-testing.md)
-7. Configure workstations to use our new services.     [Workstations: Setup](./workstation-setup.md)
+1. Configure hardware of machines to use as servers.   [Servers: Setup Hardware](./docs/kubernetes-hardware-setup.md)
+2. Create configurations for server operating systems. [Servers: Setup OS](./docs/kubernetes-operating-system-setup.md)
+3. Configure Kubernetes base architecture.             [Servers: Setup Kubernetes](./docs/kubernetes-architecture.md)
+4. Configure services.                                 [Services: Setup](./docs/services-setup.md)
+5. Deploy services to Kubernetes cluster.              [Services: Deploy](./docs/services-deploy.md)
+6. Configure test workstation.                         [Test PC: Setup](./docs/workstation-testing.md)
+7. Configure workstations to use our new services.     [Workstations: Setup](./docs/workstation-setup.md)
 
-For a list of services I will need to configure and deploy, see [Services: List](./services-list.md)
+For a list of services I will need to configure and deploy, see [Services: List](./docs/services-list.md)
 
 ## To-Do
 
 *only apply to this document, not our systems*
 
 - [X] Fix broken links to other pages.
-- [ ] Reference items from the included LEFCON invoice.
+- [ ] Reference items from the included IT invoice.
 - [ ] Add expected costs for any 3rd-party services.
 - [X] Turn the documents in this folder into actual documentation.
   - [X] Host this documentation somewhere accessible to PIWC employees. [PresqueIsleWineDev/infra-docs](https://github.com/PresqueIsleWineDev/infra-docs)
   - [ ] Create administrator usage documentation after rolling out a given piece of software to testing.
   - [ ] Create end-user usage documentation after rolling out a given piece of software to production.
 - [ ] Clean up project & integrate with GitHub
-  - [ ] Merge this repo with actual infrastructure configuration repo (place in `docs` directory)
+  - [ ] Merge this repo with actual infrastructure configuration repo
+  - [X] Move Markdown files to `docs` directory
   - [ ] Convert general process to-dos into GitHub project board
   - [ ] Convert specific process to-dos into GitHub issues
   - [ ] Convert documentation into GitHub wiki
   - [ ] Render documentation/wiki as webpage
-- [ ] Add pretty logo
+- [X] Add pretty logo to README.md
