@@ -1,4 +1,45 @@
-# LEFCON -> Internal Administration: Workstation Setup
+# Workstation Setup
+
+## About
+
+Notes:
+
+- This is not a complete list of all configuration changes I plan on making, but the ones that I consider essential & high-priority.
+
+### Microsoft Azure ActiveDirectory
+
+Large portions of configuring workstations is actually just configuring Azure ActiveDirectory, so once AD is setup, I can point the workstations to use it instead of our domain controller.
+
+The biggest challenges here are:
+- Getting the infrastructure to serve OS boot images running properly.
+- Getting workstations to boot from an operating system image that is configured to use AD.
+
+See: [Azure: ActiveDirectory](./azure-activedirectory.md)
+
+## Prerequisites
+
+This is essentially the **final** required step until the main component of the transition is complete. Most requirements in other pages must also be satisfied
+
+- [ ] Configure Kubernetes node hardware
+- [ ] Configure Kubernetes node operating systems
+- [ ] Deploy basic Kubernetes config
+- [ ] Setup Kubernetes architectural services
+- [ ] Setup services that are essential to the operation of workstations
+- [ ] Configure Azure ActiveDirectory
+- [ ] Configure Windows provisioning package to use new ActiveDirectory setup
+- [ ] Deploy services to first testing environment
+- [ ] Testing successfully completed for all services
+- [ ] Deploy first production environment
+
+## Process
+
+- [ ] Configure Windows provisioning package to use our services & install all required software
+- [ ] Build OS image that boots into Windows with our provisioning package applied
+- [ ] Serve built OS image over netboot
+- [ ] Enable iPXE boot over network in BIOS/UEFI settings for each machine
+  - May have to manually flash OS image for the first installation on each machine.
+
+### Configuration Changes
 
 Workstations will need to be re-configured as follows:
 
@@ -12,19 +53,7 @@ Workstations will need to be re-configured as follows:
   - [ ] Configure workstation provisioning packages to allow access from system administrators by adding authentication keys.
 
 
-Notes:
 
-- This is not a complete list of all configuration changes I plan on making, but the ones that I consider essential & high-priority.
+### Workstation Management Services
 
-## Microsoft Azure ActiveDirectory
-
-Large portions of configuring workstations is actually just configuring Azure ActiveDirectory, so once AD is setup, I can point the workstations to use it instead of our domain controller.
-
-See: [Azure: ActiveDirectory](./plan_transition_azure-activedirectory.md)
-
-
-## Workstation Management Services
-
-See: [Services: Workstation Management](./plan_transition_services-list.md#Workstation_Management)
-
-[LEFCON Monthly Invoice](../Financial/invoice-lefcon-monthly-feb23.pdf)
+See: [Services List: Workstation Management](./services-list.md#Workstation_Management)
