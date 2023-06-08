@@ -1,5 +1,7 @@
 # Infrastructure Documentation
 
+![PIWC Logo](./piwine-logo.png?raw=true)
+
 Documentation for our digital infrastructure.
 
 Currently only contains the plan for transitioning from LEFCON to internal administration and management.
