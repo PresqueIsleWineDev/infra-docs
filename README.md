@@ -16,8 +16,6 @@ Currently only contains the plan for transitioning from external IT to internal 
 This is the overview of my plans to transition our internal systems (and eventually external) away from external IT management to our own infrastructure and management.
 
 This document intends on being as complete as possible.
-The current state of this document is certainly incomplete, and likely will remain incomplete until LEFCON provides more details about our current setup.
-This document will be periodically updated as plans, information, and progress changes.
 
 Document Format: GitHub-flavored `Markdown`.
 
@@ -39,7 +37,16 @@ Repo originated as a collection of private notes to scaffold my plans, but work 
 
 To avoid duplicating effort by having to maintain personal notes & to-dos and provide periodic updates about my plans and progress, I decided to merge them.
 
+### Updates
+
+This document itself will be periodically updated as plans, information, and progress changes.
+
+All updates to this project (on the `main` branch) will generate an entry in this repo's [commit history](https://github.com/PresqueIsleWineDev/infra-docs/commits/main)
+
+
 ### Document Flaws
+
+The current state of this document is *certainly* incomplete, and likely will remain incomplete until our external IT service provides more details about our current setup.
 
 Some aspects of this document may be clunky at present time because I didn't initially intend for anyone to read this but me. This will improve over time as I necessarily make changes to my plans & notes.
 
