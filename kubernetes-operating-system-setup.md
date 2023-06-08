@@ -13,25 +13,25 @@ Notes:
 
 ## Prerequisites
 
-1. Prepare hardware for Kubernetes nodes. See: [Kubernetes: Hardware Setup](./kubernetes-hardware-setup.md)
+1. [ ] Prepare hardware for Kubernetes nodes. See: [Kubernetes: Hardware Setup](./kubernetes-hardware-setup.md)
 
 ## Process
 
-1. [~] Create Kubernetes    generic node base NixOS config. (*Never instantiated, only inherited from*)
+1. [ ] Create Kubernetes    generic node base NixOS config. (*Never instantiated, only inherited from*) **Work already in-progress**
 2. [ ] Create Kubernetes     worker node base NixOS config. Inherit from generic config. For instantiating     worker nodes.
 3. [ ] Create Kubernetes controller node base NixOS config. Inherit from generic config. For instantiating controller nodes.
 4. [ ] Configure each node:
-  a. [ ] Create Disko Nix config to provision, partition, format hard drives according to the type, speed, & size of the node's hard drive(s)
-  b. [ ] Create NixOS host configs based off the base configs created above, importing:
+  - [ ] Create Disko Nix config to provision, partition, format hard drives according to the type, speed, & size of the node's hard drive(s)
+  - [ ] Create NixOS host configs based off the base configs created above, importing:
     - Disko config matching the PC's hard disks.
     - Base NixOS config (if worker node, worker base, else controller base)
     - Host specific overrides (*only necessary attributes* like `networking.hostName`, `networking.connections.ipv4.address`, `swap.swapDevices` etc.)
-  c. [ ] Add NixOS host to `colmenaConfigurations` to create swarm for easy deployment, update, management, etc.
+  - [ ] Add NixOS host to `colmenaConfigurations` to create swarm for easy deployment, update, management, etc.
 
 5. [ ] Install NixOS configured for Kubernetes Nodes
-  a. [ ] Create NixOS installation USB with Kubernetes node configs (worker, controller)
-  b. [ ] Boot each machine into `BIOS` / `UEFI` mode and boot into USB installer
-  c. [ ] Run custom NixOS installer & reboot
+  - [ ] Create NixOS installation USB with Kubernetes node configs (worker, controller)
+  - [ ] Boot each machine into `BIOS` / `UEFI` mode and boot into USB installer
+  - [ ] Run custom NixOS installer & reboot
 
 7. [ ] Test networking, clustering behavior
 
