@@ -1,18 +1,26 @@
-# Infrastructure Transition Plan: LEFCON -> Internal Administration
+# Infrastructure Documentation
+
+Documentation for our digital infrastructure.
+
+Currently only contains the plan for transitioning from LEFCON to internal administration and management.
 
 ## References
 
 - [Term Glossary](./glossary.md)
-- [LEFCON Invoice](./invoice-lefcon-monthly-feb23.pdf)
+- [IT Invoice](./invoice-lefcon-monthly-feb23.pdf)
 
 ## About
 
-This is the overview of my plans to transition our internal systems (and eventually external) away from LEFCON to our own infrastructure and management.
+This is the overview of my plans to transition our internal systems (and eventually external) away from external IT management to our own infrastructure and management.
 
 This document intends on being as complete as possible.
 The current state of this document is certainly incomplete, and likely will remain incomplete until LEFCON provides more details about our current setup.
+This document will be periodically updated as plans, information, and progress changes.
 
-### Purposes
+Document Format: GitHub-flavored `Markdown`.
+
+
+### Purpose
 
 This document will be updated over time as details unfold and the bulk of the implementation process begins.
 
@@ -23,7 +31,35 @@ This document will (eventually) serve as:
 - landing for my notes about our existing setup
 - changelog to provide to employees after a rollout
 
-### Considerations
+### Origin
+
+Repo originated as a collection of private notes to scaffold my plans, but work has been done to make this a more complete reference manual and task list.
+
+To avoid duplicating effort by having to maintain personal notes & to-dos and provide periodic updates about my plans and progress, I decided to merge them.
+
+### Document Flaws
+
+Some aspects of this document may be clunky at present time because I didn't initially intend for anyone to read this but me. This will improve over time as I necessarily make changes to my plans & notes.
+
+Immediately below is a list of information I intend on covering, but is suboptimal at present.
+
+- Ordering of tasks is not precise.
+- Nesting checkboxes destoys their order.
+
+Missing Details:
+
+- 100% enummeration of **all** required components.
+- Exact names of software implementing all of the mentioned components. For some things, I know which implementation I intend on using. For others, I have to weigh the pros/cons to each option. However, I have a set of candidate options in mind for every component.
+- Steps that are smaller, but still necessary and possibly lengthy, but not worth giving its own bullet point / checkbox. This list is currently only an *overview*. Some tasks are **far** too complex or uncertain to attempt to pre-emptively document the process.
+- Currently only describing details for replacing internal infrastructure. Website is not touched upon much.
+- Denotation of which components/services/steps are *required* for the initial rollout.
+- Explanations for why I'm including components/services that are not *required* for the initial rollout, but will likely be necessary when implementing future features I intend on implementing.
+- Future functionality
+
+
+## Infrastructure Details
+
+### Design Considerations
 
 - Modern architecture, development, and deployment practices
 - Security
@@ -37,23 +73,7 @@ This document will (eventually) serve as:
 - Future proofing
 - Future extensions & functionality
 
-### Document Faults
-
-- Ordering of tasks is not precise.
-
-Missing Details:
-
-- 100% enummeration of **all** required components.
-- Exact names of software implementing all of the mentioned components. For some things, I know which implementation I intend on using. For others, I have to weigh the pros/cons to each option. However, I have a set of candidate options in mind for every component.
-- Steps that are smaller, but still necessary and possibly lengthy, but not worth giving its own bullet point / checkbox. This list is currently only an *overview*. Some tasks are **far** too complex or uncertain to attempt to pre-emptively document the process.
-- Currently only describing details for replacing internal infrastructure. Website is not touched upon much.
-- Denotation of which components/services/steps are *required* for the initial rollout.
-- Explanations for why I'm including components/services that are not *required* for the initial rollout, but will likely be necessary when implementing future features I intend on implementing.
-- Future functionality
-
-
-
-## Setup Overview
+### Setup Overview
 
 1. Configure hardware of machines to use as servers.   [Servers: Setup Hardware](./kubernetes-hardware-setup.md)
 2. Create configurations for server operating systems. [Servers: Setup OS](./kubernetes-operating-system-setup.md)
@@ -76,8 +96,10 @@ For a list of services I will need to configure and deploy, see [Services: List]
   - [X] Host this documentation somewhere accessible to PIWC employees. [PresqueIsleWineDev/infra-docs](https://github.com/PresqueIsleWineDev/infra-docs)
   - [ ] Create administrator usage documentation after rolling out a given piece of software to testing.
   - [ ] Create end-user usage documentation after rolling out a given piece of software to production.
+- [ ] Clean up project & integrate with GitHub
   - [ ] Merge this repo with actual infrastructure configuration repo (place in `docs` directory)
   - [ ] Convert general process to-dos into GitHub project board
   - [ ] Convert specific process to-dos into GitHub issues
   - [ ] Convert documentation into GitHub wiki
   - [ ] Render documentation/wiki as webpage
+- [ ] Add pretty logo
