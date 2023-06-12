@@ -1,5 +1,10 @@
 # LEFCON -> Internal Administration: Kubernetes Setup Process
 
+## About
+
+More Info:
+
+- [Why Kubernetes](../about-software/kubernetes.md)
 
 ## Kubernetes Setup Process
 
@@ -31,7 +36,7 @@
 
 This section will list software services to be run inside Kubernetes.
 
-For a list of services I will need to deploy, see: [plan_transition_services.md](./plan_transition_services.md)
+For a list of services I will need to deploy, see: [plan_transition_services.md](./services-list.md)
 
 Notes:
 

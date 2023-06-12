@@ -1,0 +1,75 @@
+# --- Keys -----------------------------------------------------------
+
+## --- GPG -------------------
+.asc
+.gpg
+
+## --- LUKS ------------------
+.luks
+.luks2
+.lukskey
+
+## --- SSH -------------------
+id_*
+.pub
+.privkey
+.pubkey
+
+## --- TLS -------------------
+.cert
+.crt
+.p11
+
+## --- Misc ------------------
+.key
+.pki
+.pkcs
+.secret
+
+# --- Credentials ----------------------------------------------------
+.cred
+.creds
+*credential*.*
+
+
+# --- Private Info ---------------------------------------------------
+
+## --- Backups ---------------
+backups/*
+
+## --- Documentation ---------
+docs/accounts.md
+docs/it_contact.md
+docs/private_*
+docs/secret_*
+
+## --- CLI History -----------
+.*_history
+bash_history
+less_history
+zsh_history
+
+## --- Git Config ------------
+.gitconfig
+.gitconfig.local
+.config.local
+
+## --- Password Manager Database ---
+
+# --- Artifacts ------------------------------------------------------
+
+## --- Compilation -----------
+.o
+
+## --- Logs ------------------
+.log
+
+## --- Nix -------------------
+result
+
+# --- Temporary Files ------------------------------------------------
+
+## --- Misc ------------------
+.tmp
+.temp
+

@@ -17,6 +17,10 @@ Notes:
 - This list may not be complete.
 - This list may not be ordered precisely or correctly and should be considered *approximate*.
 
+More Info:
+
+- [Why Kubernetes](../about-software/kubernetes.md)
+
 ## Prerequisites
 
 1. Prepare hardware for Kubernetes nodes. See: [Kubernetes - Node Hardware Setup](./kubernetes-hardware-setup.md)
