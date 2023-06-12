@@ -24,7 +24,7 @@ Microsoft Azure's AD has nice integration with other Microsoft products, includi
 
 I am going to use Hashicorp's Terraform tool to configure Microsoft Azure.
 
-For rationale in why I plan on using Terraform, see: [Why Terraform](./terraform-why.md)
+For rationale in why I plan on using Terraform, see: [Why Terraform](../about-software/terraform-why.md)
 
 
 ## Prerequisites
