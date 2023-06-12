@@ -84,15 +84,15 @@ Missing Details:
 
 ### Setup Overview
 
-1. Configure hardware of machines to use as servers.   [Servers: Setup Hardware](./docs/kubernetes-hardware-setup.md)
-2. Create configurations for server operating systems. [Servers: Setup OS](./docs/kubernetes-operating-system-setup.md)
-3. Configure Kubernetes base architecture.             [Servers: Setup Kubernetes](./docs/kubernetes-architecture.md)
-4. Configure services.                                 [Services: Setup](./docs/services-setup.md)
-5. Deploy services to Kubernetes cluster.              [Services: Deploy](./docs/services-deploy.md)
-6. Configure test workstation.                         [Test PC: Setup](./docs/workstation-testing.md)
-7. Configure workstations to use our new services.     [Workstations: Setup](./docs/workstation-setup.md)
+1. Configure hardware of machines to use as servers.   [Servers: Setup Hardware](./docs/plans/kubernetes-hardware-setup.md)
+2. Create configurations for server operating systems. [Servers: Setup OS](./docs/plans/kubernetes-operating-system-setup.md)
+3. Configure Kubernetes base architecture.             [Servers: Setup Kubernetes](./docs/plans/kubernetes-architecture.md)
+4. Configure services.                                 [Services: Setup](./docs/plans/services-setup.md)
+5. Deploy services to Kubernetes cluster.              [Services: Deploy](./docs/plans/services-deploy.md)
+6. Configure test workstation.                         [Test PC: Setup](./docs/plans/workstation-testing.md)
+7. Configure workstations to use our new services.     [Workstations: Setup](./docs/plans/workstation-setup.md)
 
-For a list of services I will need to configure and deploy, see [Services: List](./docs/services-list.md)
+For a list of services I will need to configure and deploy, see [Services: List](./docs/plans/services-list.md)
 
 ## To-Do
 

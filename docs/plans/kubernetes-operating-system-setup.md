@@ -11,6 +11,10 @@ Notes:
 - The base configurations involve configuring a lot of components.
   - Can be altered in the future after deployment, but getting things right before building on top of it will save a lot of effort and potential service downtime.
 
+More info:
+
+- [Why Kubernetes](../about-software/kubernetes.md)
+
 ## Prerequisites
 
 1. [ ] Prepare hardware for Kubernetes nodes. See: [Kubernetes: Hardware Setup](./kubernetes-hardware-setup.md)

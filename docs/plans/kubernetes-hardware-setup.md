@@ -3,7 +3,7 @@
 
 ## About
 
-I plan on running as much of our infrastructure within Kubernetes as possible (See: [Why Kubernetes](./kubernetes-why.md))
+I plan on running as much of our infrastructure within Kubernetes as possible (See: [Why Kubernetes](../about-software/kubernetes.md))
 I intend on using Azure Kubernetes Service to run mission-critical services, but almost everything *could* be run there.
 However, many intended use cases for some services pretty much demands we have low-latency connections to the service, so we will likely want to run a handful of things in-house.
 Regardless, in order to test the services we will run without incurring the high usage cost of rapid iteration & deployment to cloud providers' Kubernetes services, I will need to have a Kubernetes cluster running on-site.

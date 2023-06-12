@@ -1,6 +1,6 @@
 # Services: Setup & Configuration
 
-For a list of services I will need to configure and deploy, see [Services: List](./plan_transition_services-list.md)
+For a list of services I will need to configure and deploy, see [Services: List](./services-list.md)
 
 ## About
 
