@@ -8,7 +8,7 @@ Currently only contains the plan for transitioning from external IT to internal 
 
 ## References
 
-- [Term Glossary](.docs/plans/glossary.md)
+- [Term Glossary](.docs/glossary.md)
 - [IT Invoice](./assets/invoice-it-services-feb23.pdf)
 
 ## About
