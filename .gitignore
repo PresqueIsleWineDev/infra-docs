@@ -1,0 +1,20 @@
+# Keys
+.pki
+.key
+.pub
+.privkey
+.pubkey
+.luks
+.luks2
+.lukskey
+.cert
+.crt
+.p11
+.pkcs
+.cred
+.creds
+*credential*.*
+
+# Private Info
+docs/accounts.md
+docs/it_contact.md
