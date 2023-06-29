@@ -106,7 +106,7 @@ For a list of services I will need to configure and deploy, see [Services: List]
   - [ ] Create administrator usage documentation after rolling out a given piece of software to testing.
   - [ ] Create end-user usage documentation after rolling out a given piece of software to production.
 - [ ] Clean up project & integrate with GitHub
-  - [ ] Merge this repo with actual infrastructure configuration repo
+  - [X] Merge this repo with actual infrastructure configuration repo
   - [X] Move Markdown files to `docs` directory
   - [ ] Convert general process to-dos into GitHub project board
   - [ ] Convert specific process to-dos into GitHub issues
