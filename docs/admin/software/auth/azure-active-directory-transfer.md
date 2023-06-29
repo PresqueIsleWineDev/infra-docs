@@ -6,7 +6,8 @@ See also:
 
 - [Objectives](./use-cases.md#Goals)
 - [New Capabilities](./use-cases.md#Additional)
-- [Plan Comparison & Pricing](./azure-plan-comparison.md)
+- [Plan Comparison & Pricing](./plan-comparison.md)
+- [User Licensing Requirements](./user-license-requirements-list.md)
 
 ## Reference
 
@@ -56,19 +57,35 @@ This leaves us with a number of paths to select from when proceeding.
 
 1. Transfer all PIWC resources on Azure from external IT account to PIWC-owned account.
   Pros:
+  - End goal achieved soonest.
   Cons:
+  - Cost from external IT work to facilitate this may be more than months of paying for AAD Premium P1 plan.
+  - Longest process, external IT will not be motivated to perform in timely mannor.
+  - Cannot work on AAD tasks until this is completed.
   Process:
 
-2. Pay for AAD Premium P1 plan.
+2. Pay for AAD Premium P1 plan indefinitely. Reducing user count **before** granting admin access.
   Pros:
-  - Least effort
+  - Least effort internally.
   Cons:
   - Requires external IT to perform a *lot* of extra steps to reduce user count before becoming reasonably expensive.
-  - Cost from external IT work to facilitate this may be more than months of paying for AAD Premium P1 plan.
+  - May add cost from external IT work to reduce user count by properly configuring AAD groups & roles.
+  - External IT may perform this improperly, leaving us with potential downtime or misconfiguration.
   Process:
 
-3. Grant access to *only* PIWC system administrator & remove access for external IT contractor on existing tenant.
+3. Pay for AAD Premium P1 plan indefinitely. Reducing user count **after** granting admin access.
   Pros:
+  - Lower effort
   Cons:
+  - We will probably have to eat the cost of the first month of `Premium P1` with **47** users before reducing user count.
+  - Decision whether to continue paid plan or to transfer resources is postponed.
+  Process:
+
+4. Grant access to *only* PIWC system administrator & remove access for external IT contractor on existing tenant.
+  Pros:
+  - No additional expenses
+  Cons:
+  - External IT cannot perform administration duties anymore, just internal IT.
+  - May not be possible.
   Process:
 
