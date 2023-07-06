@@ -96,6 +96,7 @@
     qnr.url = "github:divnix/quick-nix-registry";    # quick-nix-registry: Local nix registry for caching packages, etc.
     treefmt-nix.url = "github:numtide/treefmt-nix";  # treefmt: multi-lang formatter for Nix projects
     terranix.url = "github:terranix/terranix";       # Terranix: Terraform config in Nix ---
+    sops-nix.url = "github:Mic92/sops-nix";          # sops-nix: Encrypted secrets in Nix configs
   };
 
   outputs = { std, hive, self, nixpkgs, ...} @ inputs: let
